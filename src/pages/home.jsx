@@ -1,10 +1,13 @@
 import { Link } from "react-router-dom";
+import "../index.css";
 
 function Home() {
   return (
     <div>
       <p>johndick.me personal site</p>
       <p>You are @johndick.me home</p>
+      <p>You are @johndick.me home</p>
+
       <Link style={{ paddingRight: "10px" }} to="/">
         Home
       </Link>

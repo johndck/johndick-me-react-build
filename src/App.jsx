@@ -5,8 +5,6 @@ import Focus from "./pages/currentfocus";
 import Shaped from "./pages/shapedby";
 import Evidence from "./pages/deliveryevidence";
 
-import "./App.css";
-
 function App() {
   return (
     <BrowserRouter>
