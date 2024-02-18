@@ -1,27 +1,11 @@
-import { Link } from "react-router-dom";
+import TopSection from "../components/topsection";
+
+const evidenceTitle = "Previous Delivery Evidence";
+const evidenceDescription =
+  "Here is a list of previous deliveries that I have made happen over the last 20 years.";
 
 function Evidence() {
-  return (
-    <div>
-      <p>johndick.me personal site</p>
-      <p>Delivery Evidence</p>
-      <Link style={{ paddingRight: "10px" }} to="/">
-        Home
-      </Link>
-      <Link style={{ paddingRight: "10px" }} to="/Evidence">
-        Evidence
-      </Link>
-      <Link style={{ paddingRight: "10px" }} to="/Focus">
-        Focus
-      </Link>
-      <Link style={{ paddingRight: "10px" }} to="/Shaped">
-        Shaped
-      </Link>
-      <Link style={{ paddingRight: "10px" }} to="/Contact">
-        Contact
-      </Link>
-    </div>
-  );
+  return <TopSection title={evidenceTitle} description={evidenceDescription} />;
 }
 
 export default Evidence;
