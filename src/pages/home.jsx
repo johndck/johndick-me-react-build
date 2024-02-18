@@ -3,7 +3,7 @@ import "../index.css";
 
 function Home() {
   return (
-    <div>
+    <>
       <p>johndick.me personal site</p>
       <p>You are @johndick.me home</p>
       <p>You are @johndick.me home</p>
@@ -23,7 +23,7 @@ function Home() {
       <Link style={{ paddingRight: "10px" }} to="/Contact">
         Contact
       </Link>
-    </div>
+    </>
   );
 }
 
