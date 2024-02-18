@@ -4,10 +4,12 @@ import Contact from "./pages/contact";
 import Focus from "./pages/currentfocus";
 import Shaped from "./pages/shapedby";
 import Evidence from "./pages/deliveryevidence";
+import Navbar from "./components/navbar";
 
 function App() {
   return (
     <BrowserRouter>
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Evidence" element={<Evidence />} />

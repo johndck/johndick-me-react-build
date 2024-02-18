@@ -56,7 +56,7 @@
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: black;
   text-decoration: inherit;
 }
 a:hover {
@@ -113,5 +113,65 @@ button:focus-visible {
   }
   button {
     background-color: #f9f9f9;
+  }
+}
+
+/* here is the site container for every section */
+
+/* for wider screens I want the container to only be 1200 wide */
+
+.container {
+  width: 1200px;
+  max-width: 75%;
+  margin: 0 auto;
+}
+
+/* here is the navbar styling */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em 0;
+}
+
+.navbarElements {
+  padding-left: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  list-style-type: none;
+}
+
+.navbarElements li {
+  margin-right: 1em;
+  font-size: 18px;
+  line-height: 1.1;
+}
+
+.logo {
+  height: 50px;
+  width: auto;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+  font-size: 40px;
+  line-height: 1em;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+/* styling to make the navbar hamburger on ipad & mobile */
+
+@media (max-width: 768px) {
+  .navbarElements {
+    display: none;
+  }
+  .hamburger {
+    display: block;
   }
 }
