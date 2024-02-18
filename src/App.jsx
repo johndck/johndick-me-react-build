@@ -5,7 +5,6 @@ import Focus from "./pages/currentfocus";
 import Shaped from "./pages/shapedby";
 import Evidence from "./pages/deliveryevidence";
 import Navbar from "./components/navbar";
-import Hero from "./components/hero";
 
 function App() {
   return (

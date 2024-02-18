@@ -1,6 +1,6 @@
 import TopSection from "../components/topsection";
 
-const evidenceTitle = "Importand influences";
+const evidenceTitle = "Important influences";
 const evidenceDescription = "What shapes and influences my thinking.";
 
 function Shaped() {
