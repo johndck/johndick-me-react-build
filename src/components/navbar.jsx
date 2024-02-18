@@ -15,7 +15,9 @@ function Navbar() {
       </div>
       {/*logo link to homepage */}
       <div>
-        <div className="hamburger">&#9776;</div>
+        <div className="hamburger">
+          <button>&#9776;</button>
+        </div>
         <ul className="navbarElements">
           <li>
             <Link to="/Evidence">Past delivery</Link>
