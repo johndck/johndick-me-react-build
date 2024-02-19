@@ -4,7 +4,7 @@ import data from "../deliveryList.json";
 
 const evidenceTitle = "Previous Delivery Evidence";
 const evidenceDescription =
-  "Here is a list of previous deliveries that I have made happen over the last 20 years.";
+  "Examples of things I have made happen in my career so far...";
 
 function Evidence() {
   console.log(data);
@@ -14,9 +14,13 @@ function Evidence() {
       <TopSection title={evidenceTitle} description={evidenceDescription} />
 
       <div className="container">
-        {data.map((card) => {
-          return <ProjectCard key={card.id} card={card} />;
-        })}
+        <div className="evidenceCardHolder">
+          <div className="evidenceGridHolder">
+            {data.map((card) => {
+              return <ProjectCard key={card.id} card={card} />;
+            })}
+          </div>
+        </div>
       </div>
     </>
   );

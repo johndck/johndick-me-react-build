@@ -49,6 +49,9 @@
   --background-color: rgba(238, 239, 233, 1);
   --siteRed: rgba(236, 158, 42, 1);
   --siteRedHighlight: rgba(236, 158, 42, 0.2);
+  --greybackground: rgba(225, 227, 220, 1);
+  --siteRedAccent: rgba(243, 78, 10, 1);
+  --siteturquoise: rgba(0, 161, 188, 1);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -57,9 +60,14 @@
 }
 
 a {
-  font-weight: 500;
+  font-weight: 400;
+  text-decoration: none;
   color: black;
-  text-decoration: inherit;
+}
+
+.active {
+  color: var(--siteRedAccent);
+  background-color: var(--siteRedHighlight);
 }
 
 html,
@@ -89,7 +97,7 @@ p {
 
 .container {
   width: 1200px;
-  max-width: 75%;
+  max-width: 80%;
   margin: 0 auto;
 }
 
@@ -134,17 +142,6 @@ p {
   background-color: var(--background-color);
   border: none;
   cursor: pointer;
-}
-
-/* styling to make the navbar hamburger on ipad & mobile */
-
-@media (max-width: 768px) {
-  .navbarElements {
-    display: none;
-  }
-  .hamburger {
-    display: block;
-  }
 }
 
 .nav-links {
@@ -233,4 +230,66 @@ p {
   font-weight: 400;
   margin: 0;
   padding-top: 20px;
+}
+
+/* end of showcase section */
+
+/* Delivery evidence card styling */
+
+.evidenceCardHolder {
+  margin: 0 auto;
+  background-color: var(--greybackground);
+  padding: 30px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.evidenceGridHolder {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+/* styling for each evidence card */
+
+.evidenceCard {
+  padding: 20px;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.evidenceCard h2,
+.evidenceCard h3 {
+  margin: 0;
+}
+
+.evidenceChallenge {
+  color: var(--siteRed);
+}
+
+.evidenceActions {
+  color: var(--siteRedAccent);
+}
+
+.evidenceResults {
+  color: var(--siteturquoise);
+}
+
+/** MEDIA QUERIES **/
+/*******************
+
+
+/* styling to make the navbar hamburger on ipad & mobile */
+
+@media (max-width: 768px) {
+  .navbarElements {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+  .evidenceGridHolder {
+    grid-template-columns: 1fr;
+  }
 }

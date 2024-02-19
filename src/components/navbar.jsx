@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function Navbar() {
   const [isOpen, setOpen] = useState(false);
@@ -64,13 +65,13 @@ function Navbar() {
 
         <ul className="navbarElements">
           <li>
-            <Link to="/Evidence">Past delivery</Link>
+            <NavLink to="/Evidence">Past delivery</NavLink>
           </li>
           <li>
-            <Link to="/Focus">Current focus</Link>
+            <NavLink to="/Focus">Current focus</NavLink>
           </li>
           <li>
-            <Link to="/Shaped">Influenced by</Link>
+            <NavLink to="/Shaped">Influenced by</NavLink>
           </li>
         </ul>
       </div>
