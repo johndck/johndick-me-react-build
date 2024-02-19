@@ -181,7 +181,7 @@ p {
 /* here is the hero section styling */
 
 .hero {
-  height: 95vh;
+  height: 75vh;
 }
 
 .hero h1 {
@@ -212,4 +212,28 @@ p {
 
 .orangehighlight {
   background-color: var(--siteRedHighlight);
+}
+
+/* end of hero section */
+
+/* Homepage - showcase section */
+
+.showcaseSection {
+  background-color: black;
+  height: 200px;
+}
+
+.showcase {
+  color: white;
+}
+.showcaseTitle {
+  display: flex;
+  justify-content: center;
+}
+
+.showcaseTitle h2 {
+  font-size: 2em;
+  font-weight: 400;
+  margin: 0;
+  padding-top: 20px;
 }
