@@ -52,6 +52,8 @@
   --greybackground: rgba(225, 227, 220, 1);
   --siteRedAccent: rgba(243, 78, 10, 1);
   --siteturquoise: rgba(0, 161, 188, 1);
+  --navbarBackground: rgba(225, 227, 220, 1);
+  --navBarBorder: rgba(202, 203, 194, 1);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -104,13 +106,16 @@ p {
 /* here is the navbar styling */
 
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding: 2em 0;
   position: sticky;
-  background-color: var(--background-color);
+  background-color: var(--navbarBackground);
   top: 0;
+  border-bottom: 1px solid var(--navBarBorder);
+}
+
+.navbarContent {
+  display: flex;
+  justify-content: space-between;
 }
 
 .navbarElements {
