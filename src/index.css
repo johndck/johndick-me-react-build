@@ -171,8 +171,19 @@ p {
   transform: translateX(0);
 }
 
+.nav-links ul {
+  list-style: none;
+  font-size: 1.2em;
+}
+
+ul li {
+  margin-bottom: 30px;
+}
+
 .closebtn {
   align-self: flex-end;
+  color: black;
+  font-size: 2em;
   margin-top: 1rem;
   margin-right: 1rem;
   cursor: pointer;
