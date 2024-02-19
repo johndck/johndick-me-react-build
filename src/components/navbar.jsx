@@ -18,7 +18,7 @@ function Navbar() {
       <div>
         <Link to="/">
           <img
-            src="/src/assets/logo.svg"
+            src="../src/assets/logo.svg"
             alt="my site logo of 6 block colours"
             className="logo"
           />
