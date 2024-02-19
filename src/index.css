@@ -180,13 +180,15 @@ p {
 /* here is the hero section styling */
 
 .hero {
-  height: 75vh;
+  height: 70vh;
 }
 
 .hero h1 {
   font-family: "Open Sans", sans-serif;
-  font-size: 2em;
+  font-size: 4em;
   font-weight: 400; /* Regular weight */
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .hero h2 {
@@ -194,7 +196,7 @@ p {
   font-size: 7em;
   font-weight: 400; /* Light weight */
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 
 .redq {
@@ -296,5 +298,57 @@ p {
   }
   .evidenceGridHolder {
     grid-template-columns: 1fr;
+  }
+
+  .hero h1 {
+    font-size: 3em;
+    margin-bottom: 30px;
+  }
+
+  .hero h2 {
+    margin: 0;
+    margin-bottom: 40px;
+  }
+
+  .hero p {
+    max-width: 75%;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+
+  .hero h2 {
+    font-size: 4em;
+    margin: 0;
+    margin-bottom: 40px;
+  }
+
+  .hero p {
+    max-width: 95%;
+  }
+}
+
+@media (max-width: 400px) {
+  .container {
+    max-width: 90%;
+  }
+
+  .hero {
+    height: 60vh;
+  }
+
+  .hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+
+  .hero h2 {
+    font-size: 3.2em;
+    margin: 0;
+    margin-bottom: 40px;
   }
 }
