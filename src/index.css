@@ -133,8 +133,9 @@ p {
 }
 
 .logo {
-  height: 50px;
+  height: 60px;
   width: auto;
+  margin: 0;
 }
 
 .hamburger {
@@ -143,10 +144,12 @@ p {
 }
 
 .hamburger button {
-  font-size: 1em;
-  background-color: var(--background-color);
+  font-size: 1.2em;
+  background-color: var(--navbarBackground);
+  color: black;
   border: none;
   cursor: pointer;
+  margin: 0;
 }
 
 .nav-links {
