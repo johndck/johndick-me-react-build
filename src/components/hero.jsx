@@ -4,10 +4,18 @@
 
 function Hero() {
   return (
-    <div className="container">
+    <div className="container hero">
       <h1>John Dick</h1>
-      <h2>Who am I? Find out here.</h2>
-      <p> A snazzier alternative to my Linkedin Profile 🤔</p>
+      <h2>
+        Who am I<span className="redq">?</span>
+      </h2>
+      <p>
+        {" "}
+        <span className="orangehighlight">
+          This is my website where you can find out more about me and my work.
+        </span>{" "}
+        🤔
+      </p>
     </div>
   );
 }

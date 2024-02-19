@@ -48,6 +48,7 @@
 
   --background-color: rgba(238, 239, 233, 1);
   --siteRed: rgba(236, 158, 42, 1);
+  --siteRedHighlight: rgba(236, 158, 42, 0.2);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -103,6 +104,7 @@ p {
   align-items: center;
   padding: 2em 0;
   position: sticky;
+  background-color: var(--background-color);
   top: 0;
 }
 
@@ -174,4 +176,40 @@ p {
   cursor: pointer;
   border: none;
   background-color: transparent;
+}
+
+/* here is the hero section styling */
+
+.hero {
+  height: 95vh;
+}
+
+.hero h1 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 2em;
+  font-weight: 400; /* Regular weight */
+}
+
+.hero h2 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 7em;
+  font-weight: 400; /* Light weight */
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.redq {
+  color: red;
+}
+
+.hero p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.5em;
+  font-weight: 300; /* Regular weight */
+  margin: 0;
+  max-width: 50%;
+}
+
+.orangehighlight {
+  background-color: var(--siteRedHighlight);
 }
