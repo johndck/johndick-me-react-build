@@ -1,14 +1,25 @@
 function Aboutme() {
   return (
-    <div className="container">
-      <h1>About Me</h1>
-      <p>
-        I am a software engineer with a passion for web development and design.
-        I am currently working at a startup company in San Francisco,
-        California. I have a strong background in computer science and
-        mathematics, and I am always looking for new challenges and
-        opportunities to learn and grow.
-      </p>
+    <div className="container aboutMeAllContent">
+      <div className="aboutMeContentContainer">
+        <div className="aboutMeTextContent">
+          <h3>Hello this is me</h3>
+          <p>
+            In one sentence this is your story if it is correct and this will
+            only go as far as 50%
+          </p>
+          <ul>
+            <li>4 facts</li>
+            <li>4 facts</li>
+            <li>4 facts</li>
+            <li>4 facts</li>
+          </ul>
+        </div>
+
+        <div className="aboutMeImageContent">
+          <img src="assets/jdwork.jpg" alt="profile" className="aboutMeImage" />
+        </div>
+      </div>
     </div>
   );
 }
