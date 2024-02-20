@@ -385,6 +385,35 @@ ul li {
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
 }
 
+/* Footer styling */
+.footerContent {
+  max-width: 60%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.footerSocialLinks {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 30%;
+  margin-bottom: 10px;
+}
+
+.footerEmail {
+  margin: 0 auto;
+}
+
+.footerBackground {
+  margin-top: 40px;
+  background-color: var(--navbarBackground);
+  border-top: 1px solid var(--navBarBorder);
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
 /** MEDIA QUERIES **/
 /*******************
 

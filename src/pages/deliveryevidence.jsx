@@ -1,6 +1,7 @@
 import TopSection from "../components/topsection";
 import ProjectCard from "../components/project";
 import data from "../deliveryList.json";
+import Footer from "../components/footer";
 
 const evidenceTitle = "Previous Delivery Evidence";
 const evidenceDescription =
@@ -22,6 +23,7 @@ function Evidence() {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 }
