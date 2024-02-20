@@ -441,8 +441,8 @@ ul li {
   }
 }
 
-@media screen and (max-width: 767px) and (orientation: landscape) {
+@media screen and (max-width: 920px) and (orientation: landscape) {
   .hero {
-    height: 120vh;
+    height: 500px;
   }
 }
