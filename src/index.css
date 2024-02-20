@@ -340,6 +340,7 @@ ul li {
 .evidenceCard h2,
 .evidenceCard h3 {
   margin: 0;
+  font-weight: 600;
 }
 
 .evidenceChallenge {
@@ -352,6 +353,18 @@ ul li {
 
 .evidenceResults {
   color: var(--siteturquoise);
+}
+
+.evidenceCard hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  height: 1px;
+  background: var(--navBarBorder);
+}
+
+.evidenceCard h3 {
+  margin-bottom: 15px;
 }
 
 /* end of evidence card styling */
@@ -391,7 +404,6 @@ ul li {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  border: 1px solid red;
 }
 
 .footerSocialLinks {
@@ -401,7 +413,6 @@ ul li {
   justify-content: space-between;
   margin-bottom: 10px;
   width: 60%;
-  border: 1px solid red;
 }
 
 .footerEmail {
