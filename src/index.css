@@ -55,6 +55,7 @@
   --navbarBackground: rgba(225, 227, 220, 1);
   --navBarBorder: rgba(202, 203, 194, 1);
   --sitePurple: rgba(181, 34, 206, 1);
+  --showcasecard: rgba(64, 64, 67, 1);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -251,7 +252,15 @@ ul li {
 
 .showcaseSection {
   background-color: black;
-  height: 200px;
+}
+
+.showcaseTitle {
+  margin: 0 auto;
+}
+
+.showcaseTitle h2 {
+  margin: 0;
+  line-height: 1;
 }
 
 .showcase {
@@ -259,14 +268,35 @@ ul li {
 }
 .showcaseTitle {
   display: flex;
-  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .showcaseTitle h2 {
   font-size: 2em;
   font-weight: 400;
   margin: 0;
-  padding-top: 20px;
+}
+
+.showcaseLogocontainer {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.showcaseLogoCard {
+  padding: 30px;
+  background-color: var(--showcasecard);
+  border-radius: 15px;
+}
+
+.showcaseIcon {
+  height: 60px;
+  width: auto;
 }
 
 /* end of showcase section */
