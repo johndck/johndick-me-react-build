@@ -44,8 +44,6 @@
 }
 
 :root {
-  color-scheme: light dark;
-
   --background-color: rgba(238, 239, 233, 1);
   --siteRed: rgba(236, 158, 42, 1);
   --siteRedHighlight: rgba(236, 158, 42, 0.2);
@@ -56,11 +54,6 @@
   --navBarBorder: rgba(202, 203, 194, 1);
   --sitePurple: rgba(181, 34, 206, 1);
   --showcasecard: rgba(64, 64, 67, 1);
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 a {
