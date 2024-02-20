@@ -14,7 +14,7 @@ function Navbar() {
   }
 
   return (
-    <div className="navbar">
+    <header className="navbar">
       <div className="container navbarContent">
         <div>
           <Link to="/">
@@ -79,7 +79,7 @@ function Navbar() {
       </div>
 
       {/*logo link to homepage */}
-    </div>
+    </header>
   );
 }
 
