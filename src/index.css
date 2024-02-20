@@ -416,7 +416,7 @@ ul li {
 
   .showcaseLogocontainer {
     grid-template-columns: 1fr;
-    gap: 30px;
+    gap: 40px;
   }
 }
 
@@ -438,5 +438,11 @@ ul li {
     font-size: 3.2em;
     margin: 0;
     margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 767px) and (orientation: landscape) {
+  .hero {
+    height: 120vh;
   }
 }
