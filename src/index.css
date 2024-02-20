@@ -252,6 +252,8 @@ ul li {
 
 .showcaseSection {
   background-color: black;
+  padding-top: 30px;
+  padding-bottom: 80px;
 }
 
 .showcaseTitle {
@@ -284,19 +286,28 @@ ul li {
   margin-top: 30px;
   margin-bottom: 30px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  grid-auto-flow: row;
 }
 
 .showcaseLogoCard {
-  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px;
   background-color: var(--showcasecard);
   border-radius: 15px;
 }
 
 .showcaseIcon {
-  height: 60px;
-  width: auto;
+  height: auto;
+  width: 100%;
+}
+
+.showcaseTitleOrange {
+  color: var(--siteRed);
 }
 
 /* end of showcase section */
@@ -376,6 +387,11 @@ ul li {
   .hero p {
     max-width: 75%;
   }
+
+  .showcaseLogocontainer {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -396,6 +412,11 @@ ul li {
 
   .hero p {
     max-width: 95%;
+  }
+
+  .showcaseLogocontainer {
+    grid-template-columns: 1fr;
+    gap: 30px;
   }
 }
 

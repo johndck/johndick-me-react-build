@@ -7,7 +7,12 @@ function Showcase() {
     <div className="showcaseSection">
       <div className="container">
         <div className="showcase showcaseTitle">
-          <h2>Past employers</h2>
+          <h2>
+            These employers{" "}
+            <span className="showcaseTitleOrange">
+              got value from my delivery skills
+            </span>
+          </h2>
         </div>
 
         <div className="showcaseLogocontainer">
