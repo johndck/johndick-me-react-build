@@ -26,7 +26,11 @@ function Footer() {
             </div>
           </div>
 
-          <div className="footerEmail">email: johnturnerdick@gmail.com</div>
+          <div className="footerEmail">
+            <a href="mailto:johnturnerdick@gmail.com">
+              email: johnturnerdick@gmail.com
+            </a>
+          </div>
         </div>
       </div>
     </footer>
