@@ -1,6 +1,6 @@
 function Aboutme() {
   return (
-    <div className="container aboutMeAllContent">
+    <div className="container">
       <div className="aboutMeContentContainer">
         <div className="aboutMeTextContent">
           <h3>Hello this is me</h3>
