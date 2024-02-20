@@ -54,6 +54,7 @@
   --siteturquoise: rgba(0, 161, 188, 1);
   --navbarBackground: rgba(225, 227, 220, 1);
   --navBarBorder: rgba(202, 203, 194, 1);
+  --sitePurple: rgba(181, 34, 206, 1);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -211,6 +212,7 @@ ul li {
   font-weight: 400; /* Light weight */
   margin: 0;
   margin-bottom: 60px;
+  line-height: 1;
 }
 
 .redq {
@@ -221,12 +223,26 @@ ul li {
   font-family: "Open Sans", sans-serif;
   font-size: 1.5em;
   font-weight: 300; /* Regular weight */
-  margin: 0;
+
   max-width: 50%;
+  margin-top: 20px;
+}
+
+.hero h4 {
+  font-weight: 600;
+  font-size: 1.2em;
+  margin: 0;
 }
 
 .orangehighlight {
   background-color: var(--siteRedHighlight);
+}
+
+.problemText {
+  color: var(--siteRedAccent);
+}
+.solutionText {
+  color: var(--siteturquoise);
 }
 
 /* end of hero section */
