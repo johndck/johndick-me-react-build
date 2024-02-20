@@ -30,6 +30,7 @@ function Footer() {
             <a href="mailto:johnturnerdick@gmail.com">
               email: johnturnerdick@gmail.com
             </a>
+            <p>release version v1.0 | 20 Feb</p>
           </div>
         </div>
       </div>

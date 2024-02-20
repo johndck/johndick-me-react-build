@@ -57,7 +57,7 @@ The site uses Router props to generate all of the project cards. ✅
 
 ## Testing
 
-I have tested the site using a set of sim
+I have tested the site using a set of simple test lists done manually.
 
 ## Questions
 
