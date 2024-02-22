@@ -420,6 +420,33 @@ ul li {
   padding-bottom: 90px;
 }
 
+/* Accordian container */
+
+.accordianContentHolder {
+  margin: 0 auto;
+  max-width: 80%;
+  border: 1px solid var(--navBarBorder);
+  padding: 50px;
+}
+
+.accordianItem {
+  margin: 0;
+  padding: 0;
+  border: 1px solid var(--navBarBorder);
+  margin-bottom: 20px;
+  width: 50%;
+}
+
+.accordianItem h3 {
+  padding: 0;
+  margin: 0;
+}
+
+.accordTitle {
+  display: flex;
+  flex-direction: row;
+}
+
 /** MEDIA QUERIES **/
 /*******************
 
