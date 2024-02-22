@@ -423,10 +423,12 @@ ul li {
 /* Accordian container */
 
 .accordianContentHolder {
+  display: flex;
+  flex-direction: column;
   margin: 0 auto;
-  max-width: 80%;
+  align-items: center;
+
   border: 1px solid var(--navBarBorder);
-  padding: 50px;
 }
 
 .accordianItem {
@@ -443,8 +445,28 @@ ul li {
 }
 
 .accordTitle {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  margin-bottom: 10px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.accordianNumber {
+  font-weight: 600;
+  margin-right: 20px;
+}
+
+.accordianController {
+  cursor: pointer;
+  margin-right: 10px;
+  font-weight: 600;
+}
+
+.accordianAnswer {
+  padding: 5px;
+  margin-left: 35px;
+  max-width: 85%;
 }
 
 /** MEDIA QUERIES **/
@@ -513,6 +535,10 @@ ul li {
   .footerSocialLinks {
     width: 90%;
   }
+
+  .accordianItem {
+    width: 80%;
+  }
 }
 
 @media (max-width: 600px) {
@@ -538,6 +564,10 @@ ul li {
   .showcaseLogocontainer {
     grid-template-columns: 1fr;
     gap: 40px;
+  }
+
+  .accordianItem {
+    width: 90%;
   }
 }
 
