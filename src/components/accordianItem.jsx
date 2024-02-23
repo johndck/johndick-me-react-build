@@ -1,30 +1,23 @@
-import { useState } from "react";
-
-function AccordianItem({ item }) {
-  const [isOpen, setOpen] = useState(false);
+function AccordianItem({ id, title, children, curOpen, onOpen }) {
+  const isOpen = id === curOpen;
+  console.log(isOpen);
 
   function handleOpen() {
-    setOpen(!isOpen);
+    onOpen(id);
   }
 
   return (
     <div className="accordianItem">
       <div
-        className="accordTitle"
-        onClick={() => {
-          handleOpen();
-        }}
+        className={`accordTitle ${isOpen ? "accordianOpen" : ""}`}
+        onClick={handleOpen}
       >
-        <p className="accordianNumber">{item.id}</p>
-        <p>{item.title}</p>
-        <p className="accordianController">{isOpen === true ? "-" : "+"}</p>
+        <p className="accordianNumber">{id < 9 ? `0${id}` : `${id}`}</p>
+        <p>{title}</p>
+        <p className="accordianController">{isOpen ? "-" : "+"}</p>
       </div>
-      <div
-        className="accordianAnswer"
-        style={{ display: isOpen ? "block" : "none" }}
-      >
-        <p>{item.answer}</p>
-      </div>
+
+      {isOpen && <div className="accordianAnswer">{children}</div>}
     </div>
   );
 }

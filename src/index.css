@@ -465,8 +465,14 @@ ul li {
 
 .accordianAnswer {
   padding: 5px;
-  margin-left: 35px;
+  margin-left: 40px;
   max-width: 85%;
+  display: block;
+}
+
+.accordianOpen {
+  border-top: 1px solid var(--navBarBorder);
+  font-weight: 700;
 }
 
 /** MEDIA QUERIES **/
