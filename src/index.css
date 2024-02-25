@@ -196,6 +196,12 @@ ul li {
   background-color: transparent;
 }
 
+/* Top section styling */
+
+.topSection {
+  margin-top: 30px;
+}
+
 /* here is the hero section styling */
 
 .hero {

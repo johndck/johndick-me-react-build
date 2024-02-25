@@ -1,6 +1,6 @@
 function TopSection({ title, description }) {
   return (
-    <div className="container">
+    <div className="container topSection">
       <h2>{title}</h2>
 
       <p> {description}</p>
