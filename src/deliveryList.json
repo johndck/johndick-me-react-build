@@ -4,7 +4,8 @@
     "companyName": "Reinsurance Group of America",
     "challenge": "A very succinct and clear statement of the challenge you faced",
     "actions": ["Action 1 was this", "Action 2 was this", "Action 3 was this"],
-    "results": ["Result 1 was this", "Result 2 was this", "Result 3 was this"]
+    "results": ["Result 1 was this", "Result 2 was this", "Result 3 was this"],
+    "logo": "/assets/RGA.png"
   },
   {
     "id": "2",
@@ -15,62 +16,63 @@
       "Result 1 was this",
       "Result 2 was this",
       "Result 3 was this and this and this what will happen to this, will it be a long string or will it be a short string? I don't know, I guess we'll find out soon enough"
-    ]
+    ],
+    "logo": "/assets/ESURE.png"
   },
   {
     "id": "3",
     "companyName": "The Prince's Trust",
     "challenge": "A very succinct and clear statement of the challenge you faced",
     "actions": ["Action 1 was this", "Action 2 was this", "Action 3 was this"],
-    "results": ["Result 1 was this", "Result 2 was this", "Result 3 was this"]
+    "results": ["Result 1 was this", "Result 2 was this", "Result 3 was this"],
+    "logo": "/assets/PrincesTrust.png"
   },
   {
     "id": "4",
     "companyName": "The Financial Conduct Authority",
     "challenge": "A very succinct and clear statement of the challenge you faced",
     "actions": ["Action 1 was this", "Action 2 was this", "Action 3 was this"],
-    "results": ["Result 1 was this", "Result 2 was this", "Result 3 was this"]
+    "results": ["Result 1 was this", "Result 2 was this", "Result 3 was this"],
+    "logo": "/assets/FCA.png"
   },
   {
     "id": "5",
     "companyName": "Network Rail",
     "challenge": "A very succinct and clear statement of the challenge you faced",
     "actions": ["Action 1 was this", "Action 2 was this", "Action 3 was this"],
-    "results": ["Result 1 was this", "Result 2 was this", "Result 3 was this"]
+    "results": ["Result 1 was this", "Result 2 was this", "Result 3 was this"],
+    "logo": "/assets/NetworkRail.png"
   },
   {
     "id": "6",
     "companyName": "Homeserve",
     "challenge": "A very succinct and clear statement of the challenge you faced",
     "actions": ["Action 1 was this", "Action 2 was this", "Action 3 was this"],
-    "results": ["Result 1 was this", "Result 2 was this", "Result 3 was this"]
+    "results": ["Result 1 was this", "Result 2 was this", "Result 3 was this"],
+    "logo": "/assets/Homeserve.png"
   },
   {
     "id": "7",
     "companyName": "The MOD",
     "challenge": "A very succinct and clear statement of the challenge you faced",
     "actions": ["Action 1 was this", "Action 2 was this", "Action 3 was this"],
-    "results": ["Result 1 was this", "Result 2 was this", "Result 3 was this"]
+    "results": ["Result 1 was this", "Result 2 was this", "Result 3 was this"],
+    "logo": "/assets/MOD.png"
   },
   {
     "id": "8",
     "companyName": "Capgemini",
     "challenge": "A very succinct and clear statement of the challenge you faced",
     "actions": ["Action 1 was this", "Action 2 was this", "Action 3 was this"],
-    "results": ["Result 1 was this", "Result 2 was this", "Result 3 was this"]
+    "results": ["Result 1 was this", "Result 2 was this", "Result 3 was this"],
+    "logo": "/assets/Capgemini.png"
   },
   {
     "id": "9",
     "companyName": "Bunzl plc",
     "challenge": "A very succinct and clear statement of the challenge you faced",
     "actions": ["Action 1 was this", "Action 2 was this", "Action 3 was this"],
-    "results": ["Result 1 was this", "Result 2 was this", "Result 3 was this"]
-  },
-  {
-    "id": "10",
-    "companyName": "Reinsurance Group of America",
-    "challenge": "A very succinct and clear statement of the challenge you faced",
-    "actions": ["Action 1 was this", "Action 2 was this", "Action 3 was this"],
-    "results": ["Result 1 was this", "Result 2 was this", "Result 3 was this"]
+    "results": ["Result 1 was this", "Result 2 was this", "Result 3 was this"],
+    "logo": "/assets/RGA.png"
   }
 ]

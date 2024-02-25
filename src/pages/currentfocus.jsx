@@ -1,14 +1,15 @@
 import TopSection from "../components/topsection";
 import Footer from "../components/footer";
+import KeyPerf from "../components/kpi";
 
 const evidenceTitle = "Current Focus";
-const evidenceDescription =
-  "This is holding content for me to design the page. Just run out of time for the assignment deadline. This page is not in scope for the assignment.";
+const evidenceDescription = "Here are my Q1 2024 KPIs:";
 
 function Focus() {
   return (
     <>
       <TopSection title={evidenceTitle} description={evidenceDescription} />
+      <KeyPerf />
       <Footer />
     </>
   );

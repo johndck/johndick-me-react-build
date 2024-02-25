@@ -31,6 +31,8 @@ function Footer() {
               email: johnturnerdick@gmail.com
             </a>
             <p>release version v1.01 | 22 Feb</p>
+            <p>Site: built by me</p>
+            <p>Tech: React</p>
           </div>
         </div>
       </div>

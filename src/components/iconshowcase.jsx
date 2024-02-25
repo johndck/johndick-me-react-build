@@ -1,6 +1,7 @@
 {
   /* This hero section is unique to the homepage*/
 }
+import { Link } from "react-router-dom";
 
 function Showcase() {
   return (
@@ -8,10 +9,8 @@ function Showcase() {
       <div className="container">
         <div className="showcase showcaseTitle">
           <h2>
-            These employers{" "}
-            <span className="showcaseTitleOrange">
-              got value from my delivery skills
-            </span>
+            I have made things happen{" "}
+            <span className="showcaseTitleOrange">in these organisations.</span>{" "}
           </h2>
         </div>
 
@@ -88,6 +87,14 @@ function Showcase() {
               />
             </div>
           </div>
+        </div>
+
+        <div className="showcase showcaseTitle">
+          {" "}
+          Want evidence? See:
+          <Link to="/Evidence" className="showcaseLink">
+            Past delivery
+          </Link>
         </div>
       </div>
     </div>
