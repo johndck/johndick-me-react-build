@@ -59,6 +59,12 @@
   --kpiText: rgba(235, 237, 230, 1);
 }
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 a {
   font-weight: 400;
   text-decoration: none;
@@ -576,6 +582,11 @@ ul li {
   padding: 10px;
 }
 
+.influenceCardHolder {
+  border: 2px solid red;
+  max-width: 100%;
+}
+
 .influencesCard {
   padding: 15px;
   border-radius: 15px;
@@ -586,10 +597,11 @@ ul li {
 
 .influencesCard h3 {
   margin: 0;
+  font-size: 1.2em;
 }
 
 .influencerDescription {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .influencerTitle {
@@ -598,6 +610,10 @@ ul li {
 
 .influencerArrow {
   color: var(--sitePurple);
+}
+
+.influencerLinkWrap {
+  overflow-wrap: break-word;
 }
 
 /** MEDIA QUERIES **/
@@ -620,16 +636,13 @@ ul li {
 
 @media (max-width: 768px) {
   .container {
-    max-width: 90%;
+    max-width: 95%;
   }
   .navbarElements {
     display: none;
   }
   .hamburger {
     display: block;
-  }
-  .evidenceGridHolder {
-    grid-template-columns: 1fr;
   }
 
   .hero h1 {
@@ -729,10 +742,6 @@ ul li {
   .kpiStats {
     max-width: 100%;
   }
-
-  .influenceGridHolder {
-    grid-template-columns: 1fr;
-  }
 }
 
 @media (max-width: 470px) {
@@ -742,10 +751,6 @@ ul li {
 }
 
 @media (max-width: 400px) {
-  .container {
-    width: 90%;
-  }
-
   .hero {
     height: 60vh;
   }
@@ -763,6 +768,10 @@ ul li {
 
   .kpiStats {
     max-width: 95%;
+  }
+
+  .influencesCard {
+    width: 80%;
   }
 }
 
