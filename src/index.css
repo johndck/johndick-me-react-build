@@ -97,6 +97,10 @@ p {
   margin-bottom: 0;
 }
 
+h3 {
+  margin-bottom: 15px;
+}
+
 /* here is the site container for every section */
 
 /* for wider screens I want the container to only be 1200 wide */
