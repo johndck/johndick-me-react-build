@@ -14,7 +14,8 @@ function Hero() {
       <p>
         {" "}
         <span className="orangehighlight">
-          This is my website where you can find out more about me and my work.
+          This is my website. It provides{" "}
+          <span>facts about my past, present and future work.</span>
         </span>{" "}
         🤔
       </p>

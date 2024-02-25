@@ -3,9 +3,9 @@ import ProjectCard from "../components/project";
 import data from "../deliveryList.json";
 import Footer from "../components/footer";
 
-const evidenceTitle = "Previous Delivery Evidence";
+const evidenceTitle = "Past delivery";
 const evidenceDescription =
-  "Examples of things I have made happen in my career so far...";
+  "Evidence of my work over the last couple of decades....";
 
 function Evidence() {
   console.log(data);

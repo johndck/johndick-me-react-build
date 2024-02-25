@@ -3,28 +3,27 @@ function Aboutme() {
     <div className="container">
       <div className="aboutMeContentContainer">
         <div className="aboutMeTextContent">
-          <h3>Hello this is me 👋</h3>
+          <h3>Hello, me here... 👋</h3>
           <p>
-            Over the next decade, my work will be on making the transition to
-            the all-electric economy happen, and doing my best to unlock growth
-            for the UK economy.
+            For the next decade, I will be building solutions to make the
+            all-electric economy happen. I want to deliver sustainable economic
+            growth (powered by clean, renewable energy).
           </p>
+          <br />
+          <p>Focus areas for me are:</p>
+
           <ul>
             <li>
-              Priority 1: develop digital services to reduce the cost of
-              residential energy.
+              <span className="aboutMeAreas">Area 1:</span> consumer behaviour &
+              services across energy and financial markets
             </li>
             <li>
-              Priority 2: improve my coding skills and understand how new AI
-              tools can make me more productive.
+              <span className="aboutMeAreas">Area 2:</span> tackling the
+              barriers to economic growth with sustainable solutions
             </li>
             <li>
-              Priority 3: launch test services to tackle specific problems in
-              the GB energy system.{" "}
-            </li>
-            <li>
-              Priority 4: offer my expertise and passion to unlock delivery of
-              public sector services.
+              <span className="aboutMeAreas">Area 3:</span> technological
+              innovation to drive sustainable economic growth
             </li>
           </ul>
         </div>

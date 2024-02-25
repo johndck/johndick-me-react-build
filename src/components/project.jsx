@@ -1,7 +1,14 @@
 function ProjectCard({ card }) {
   return (
     <div className="evidenceCard">
-      <h2>{card.companyName}</h2>
+      <div className="evidenceTop">
+        <div>
+          <img src={card.logo} alt="logo" className="evidenceLogo" />
+        </div>
+
+        <h2>{card.companyName}</h2>
+      </div>
+
       <hr />
       <h3>
         <span className="evidenceChallenge">The challenge:</span>

@@ -54,6 +54,9 @@
   --navBarBorder: rgba(202, 203, 194, 1);
   --sitePurple: rgba(181, 34, 206, 1);
   --showcasecard: rgba(64, 64, 67, 1);
+  --kpiBlue: rgba(46, 113, 254, 1);
+  --kpiCardBlue: rgba(2, 92, 225, 1);
+  --kpiText: rgba(235, 237, 230, 1);
 }
 
 a {
@@ -303,6 +306,12 @@ ul li {
   color: var(--siteRed);
 }
 
+.showcaseLink {
+  color: var(--siteRed);
+  font-size: 2em;
+  font-weight: 400;
+}
+
 /* end of showcase section */
 
 /* Delivery evidence card styling */
@@ -360,6 +369,20 @@ ul li {
   margin-bottom: 15px;
 }
 
+.evidenceTop {
+  display: flex;
+  align-items: center;
+}
+
+.evidenceLogo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: auto;
+  height: 14px;
+  margin-right: 10px;
+}
+
 /* end of evidence card styling */
 
 /*About me styling*/
@@ -391,6 +414,11 @@ ul li {
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
 }
 
+.aboutMeAreas {
+  color: var(--sitePurple);
+  font-weight: 600;
+}
+
 /* Footer styling */
 .footerContent {
   max-width: 60%;
@@ -420,11 +448,175 @@ ul li {
   padding-bottom: 90px;
 }
 
+/* Accordian container */
+
+.accordianContentHolder {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  align-items: center;
+
+  border: 1px solid var(--navBarBorder);
+}
+
+.accordianItem {
+  margin: 0;
+  padding: 0;
+  border: 1px solid var(--navBarBorder);
+  margin-bottom: 20px;
+  width: 50%;
+}
+
+.accordianItem h3 {
+  padding: 0;
+  margin: 0;
+}
+
+.accordTitle {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  margin-bottom: 10px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.accordianNumber {
+  font-weight: 600;
+  margin-right: 20px;
+}
+
+.accordianController {
+  cursor: pointer;
+  margin-right: 10px;
+  font-weight: 600;
+}
+
+.accordianAnswer {
+  padding: 5px;
+  margin-left: 40px;
+  max-width: 85%;
+  display: block;
+}
+
+.accordianOpen {
+  border-top: 1px solid var(--navBarBorder);
+  font-weight: 700;
+}
+
+/* Styling the KPI/current focus section */
+
+.lineBreak {
+  height: 1px;
+  max-width: 100%;
+  background-color: var(--navBarBorder);
+}
+
+.kpiContainer {
+  padding-top: 40px;
+}
+
+.kpiGridContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 50px;
+  margin-top: 40px;
+  background-color: var(--kpiBlue);
+  border-radius: 10px;
+}
+
+.kpiCard {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.kpiStats {
+  max-width: 65%;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: var(--kpiCardBlue);
+  color: var(--kpiText);
+}
+
+.kpiStats h3 {
+  margin: 0;
+}
+
+.kpiNo {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 50%;
+  border: 2px solid var(--kpiText);
+  width: 15px;
+  height: 15px;
+  margin-bottom: 10px;
+}
+
+.line {
+  width: 90%;
+  height: 1px;
+  background-color: var(--kpiText);
+  margin-bottom: 10px;
+}
+
+.kpiTitle {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+/* Influences section */
+
+.influenceGridHolder {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 25px;
+  margin-top: 40px;
+  padding: 10px;
+}
+
+.influencesCard {
+  padding: 15px;
+  border-radius: 15px;
+  background-color: var(--navbarBackground);
+  border: 1px solid var(--navBarBorder);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.influencesCard h3 {
+  margin: 0;
+}
+
+.influencerDescription {
+  margin-bottom: 10px;
+}
+
+.influencerTitle {
+  margin-bottom: 15px;
+}
+
+.influencerArrow {
+  color: var(--sitePurple);
+}
+
 /** MEDIA QUERIES **/
 /*******************
 
 
 /* styling to make the navbar hamburger on ipad & mobile */
+
+@media (max-width: 1200px) {
+  .influenceGridHolder {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 900px) {
+  .influenceGridHolder {
+    grid-template-columns: 1fr;
+  }
+}
 
 @media (max-width: 768px) {
   .container {
@@ -486,6 +678,19 @@ ul li {
   .footerSocialLinks {
     width: 90%;
   }
+
+  .accordianItem {
+    width: 80%;
+  }
+
+  .kpiGridContent {
+    grid-template-columns: 1fr;
+    padding: 40px;
+  }
+
+  .kpiStats {
+    max-width: 85%;
+  }
 }
 
 @media (max-width: 600px) {
@@ -512,11 +717,33 @@ ul li {
     grid-template-columns: 1fr;
     gap: 40px;
   }
+
+  .accordianItem {
+    width: 90%;
+  }
+
+  .kpiGridContent {
+    padding: 20px;
+  }
+
+  .kpiStats {
+    max-width: 100%;
+  }
+
+  .influenceGridHolder {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 470px) {
+  .influencesCard {
+    width: 90%;
+  }
 }
 
 @media (max-width: 400px) {
   .container {
-    max-width: 90%;
+    width: 90%;
   }
 
   .hero {
@@ -532,6 +759,10 @@ ul li {
     font-size: 3.2em;
     margin: 0;
     margin-bottom: 40px;
+  }
+
+  .kpiStats {
+    max-width: 95%;
   }
 }
 

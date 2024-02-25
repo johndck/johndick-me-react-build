@@ -2,6 +2,7 @@ import "../index.css";
 import Hero from "../components/hero";
 import Showcase from "../components/iconshowcase";
 import Aboutme from "../components/aboutme";
+import Accordian from "../components/accordian";
 import Footer from "../components/footer";
 
 function Home() {
@@ -10,6 +11,7 @@ function Home() {
       <Hero />
       <Showcase />
       <Aboutme />
+      <Accordian />
       <Footer />
     </>
   );
