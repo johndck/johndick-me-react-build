@@ -704,6 +704,10 @@ ul li {
   .kpiStats {
     max-width: 85%;
   }
+
+  .evidenceGridHolder {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 600px) {
