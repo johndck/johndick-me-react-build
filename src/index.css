@@ -127,7 +127,7 @@ h3 {
 }
 
 .navbarElements {
-  padding-left: 0;
+  padding-top: 20px;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -587,18 +587,18 @@ ul li {
 
 .influenceGridHolder {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 25px;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
   margin-top: 40px;
   padding: 10px;
 }
 
 .influenceCardHolder {
-  border: 2px solid red;
   max-width: 100%;
 }
 
 .influencesCard {
+  overflow: hidden;
   padding: 15px;
   border-radius: 15px;
   background-color: var(--navbarBackground);
@@ -761,7 +761,7 @@ ul li {
 
 @media (max-width: 470px) {
   .influencesCard {
-    width: 90%;
+    width: 100%;
   }
 }
 
@@ -783,10 +783,6 @@ ul li {
 
   .kpiStats {
     max-width: 95%;
-  }
-
-  .influencesCard {
-    width: 80%;
   }
 }
 
