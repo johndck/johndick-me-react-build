@@ -3,7 +3,7 @@ import data from "../influences.json";
 import InfluenceCards from "../components/influences";
 import Footer from "../components/footer";
 
-const evidenceTitle = "Sources of influences";
+const evidenceTitle = "Influenced by";
 const evidenceDescription =
   "These resources are my common reference material when trying to crack an important problem or remind myself on important thinking.";
 
