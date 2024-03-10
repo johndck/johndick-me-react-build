@@ -670,6 +670,15 @@ ul li {
     display: block;
   }
 
+  .hamburger button {
+    font-size: 1.2em;
+    background-color: var(--navbarBackground);
+    color: black;
+    border: none;
+    cursor: pointer;
+    margin: 1.4rem;
+  }
+
   .hero h1 {
     font-size: 3em;
     margin-bottom: 30px;
