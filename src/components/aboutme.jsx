@@ -5,31 +5,35 @@ function Aboutme() {
         <div className="aboutMeTextContent">
           <h3>Hello, me here... 👋</h3>
           <p>
-            For the next decade, I will be building solutions to make the
-            all-electric economy happen. I want to deliver sustainable economic
-            growth (powered by clean, renewable energy).
+            For the next decade, my work will on removing blockers to the
+            all-electric economy. I want sustainable economic growth (powered by
+            clean, renewable energy).
           </p>
           <br />
-          <p>Focus areas for me are:</p>
-
+          <p>Areas of focus:</p>
+          <br />
           <ul>
-            <li>
-              <span className="aboutMeAreas">Area 1:</span> consumer behaviour &
-              services across energy and financial markets
+            <li className="focusArea">
+              <span className="aboutMeAreas">Area 1:</span> all-electric homes
+              powered by clean renewable energy
             </li>
-            <li>
-              <span className="aboutMeAreas">Area 2:</span> tackling the
-              barriers to economic growth with sustainable solutions
+            <li className="focusArea">
+              <span className="aboutMeAreas">Area 2:</span> barriers to economic
+              growth within sustainable energy solutions
             </li>
-            <li>
-              <span className="aboutMeAreas">Area 3:</span> technological
-              innovation to drive sustainable economic growth
+            <li className="focusArea">
+              <span className="aboutMeAreas">Area 3:</span> tech innovation
+              unlocking sustainable economic growth
             </li>
           </ul>
         </div>
 
         <div className="aboutMeImageContent">
-          <img src="assets/jdwork.jpg" alt="profile" className="aboutMeImage" />
+          <img
+            src="assets/johndick.jpg"
+            alt="profile"
+            className="aboutMeImage"
+          />
         </div>
       </div>
     </div>

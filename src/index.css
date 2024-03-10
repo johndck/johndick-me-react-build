@@ -235,7 +235,7 @@ ul li {
 
 .hero p {
   font-family: "Open Sans", sans-serif;
-  font-size: 1.5em;
+  font-size: 1.7em;
   font-weight: 300; /* Regular weight */
 
   max-width: 50%;
@@ -244,7 +244,7 @@ ul li {
 
 .hero h4 {
   font-weight: 600;
-  font-size: 1.2em;
+  font-size: 2em;
   margin: 0;
 }
 
@@ -420,6 +420,10 @@ ul li {
   width: 50%;
 }
 
+.aboutMeTextContent p {
+  font-size: 1.2em;
+}
+
 .aboutMeImageContent {
   width: 50%;
 }
@@ -436,12 +440,17 @@ ul li {
   font-weight: 600;
 }
 
+.focusArea {
+  font-size: 1.2em;
+}
+
 /* Footer styling */
 .footerContent {
   max-width: 60%;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+  gap: 50px;
 }
 
 .footerSocialLinks {
@@ -454,6 +463,7 @@ ul li {
 }
 
 .footerEmail {
+  margin-top: 1rem;
   margin: 0 auto;
 }
 
@@ -472,8 +482,6 @@ ul li {
   flex-direction: column;
   margin: 0 auto;
   align-items: center;
-
-  border: 1px solid var(--navBarBorder);
 }
 
 .accordianItem {
@@ -482,6 +490,7 @@ ul li {
   border: 1px solid var(--navBarBorder);
   margin-bottom: 20px;
   width: 50%;
+  font-size: 1.2em;
 }
 
 .accordianItem h3 {

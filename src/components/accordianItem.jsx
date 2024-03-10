@@ -3,7 +3,11 @@ function AccordianItem({ id, title, children, curOpen, onOpen }) {
   console.log(isOpen);
 
   function handleOpen() {
-    onOpen(id);
+    if (isOpen) {
+      onOpen(null);
+    } else {
+      onOpen(id);
+    }
   }
 
   return (
