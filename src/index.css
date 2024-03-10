@@ -751,8 +751,8 @@ ul li {
 
 @media (max-width: 600px) {
   .hero {
-    height: 80vh;
-    min-height: 550px;
+    height: 70vh;
+    min-height: 500px;
   }
 
   .hero h1 {
@@ -817,6 +817,6 @@ ul li {
 
 @media screen and (max-width: 920px) and (orientation: landscape) {
   .hero {
-    height: 700px;
+    height: 525px;
   }
 }
