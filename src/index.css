@@ -384,6 +384,7 @@ ul li {
 
 .evidenceCard h3 {
   margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 .evidenceTop {
@@ -400,9 +401,9 @@ ul li {
   margin-right: 10px;
 }
 
-/* end of evidence card styling */
-
-/*About me styling*/
+.evidenceUL li {
+  margin-bottom: 5px;
+}
 
 .aboutMeContentContainer {
   margin: 0 auto;

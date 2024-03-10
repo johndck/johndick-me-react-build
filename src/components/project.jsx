@@ -23,9 +23,11 @@ function ProjectCard({ card }) {
       <h3>
         <span className="evidenceResults">Results: </span>
       </h3>
-      <p>{card.results[0]}</p>
-      <p>{card.results[1]}</p>
-      <p>{card.results[2]}</p>
+      <ul className="evidenceUL">
+        <li>{card.results[0]}</li>
+        {card.results[1] && <li>{card.results[1]}</li>}
+        {card.results[2] && <li>{card.results[2]}</li>}
+      </ul>
     </div>
   );
 }

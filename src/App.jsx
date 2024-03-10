@@ -5,12 +5,13 @@ import Focus from "./pages/currentfocus";
 import Shaped from "./pages/shapedby";
 import Evidence from "./pages/deliveryevidence";
 import Navbar from "./components/navbar";
+import ScrollToTop from "./components/scrolltotop";
 
 function App() {
   return (
     <BrowserRouter>
       <Navbar />
-
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Evidence" element={<Evidence />} />
