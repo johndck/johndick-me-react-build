@@ -212,9 +212,6 @@ ul li {
 
 /* here is the hero section styling */
 
-.hero {
-}
-
 .hero h1 {
   font-family: "Open Sans", sans-serif;
   font-size: 4em;
@@ -676,7 +673,7 @@ ul li {
     color: black;
     border: none;
     cursor: pointer;
-    margin: 1.4rem;
+    margin: 1.2rem;
   }
 
   .hero h1 {
