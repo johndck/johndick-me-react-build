@@ -4,8 +4,7 @@ import data from "../deliveryList.json";
 import Footer from "../components/footer";
 
 const evidenceTitle = "Past delivery";
-const evidenceDescription =
-  "Evidence of my work over the last couple of decades....";
+const evidenceDescription = "I am very much a doer...here's some examples";
 
 function Evidence() {
   console.log(data);
