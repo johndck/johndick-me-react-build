@@ -1,25 +1,24 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/home";
 import Contact from "./pages/contact";
-import Evidence from "./pages/evidence";
-import Focus from "./pages/focus";
-import Influence from "./pages/influence";
+import Focus from "./pages/currentfocus";
+import Shaped from "./pages/shapedby";
+import Evidence from "./pages/deliveryevidence";
 import Navbar from "./components/navbar";
-import Footer from "./components/footer";
-import "./index.css";
+import ScrollToTop from "./components/scrolltotop";
 
 function App() {
   return (
     <BrowserRouter>
       <Navbar />
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/evidence" element={<Evidence />} />
-        <Route path="/focus" element={<Focus />} />
-        <Route path="/influence" element={<Influence />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/Evidence" element={<Evidence />} />
+        <Route path="/Focus" element={<Focus />} />
+        <Route path="/Shaped" element={<Shaped />} />
+        <Route path="/Contact" element={<Contact />} />
       </Routes>
-      <Footer />
     </BrowserRouter>
   );
 }
