@@ -1,15 +1,13 @@
 import accData from "../accordian.json";
-import AccordianItem from "./accordianItem";
 import { useState } from "react";
+import AccordianItem from "./accordianitem.jsx";
 
-console.log(accData);
-
-function Accordian() {
+function Homeaccordian() {
   const [curOpen, setCurOpen] = useState(null);
 
   return (
-    <div className="container">
-      <div className="accordianContentHolder">
+    <div className="p-3 mb-8">
+      <div className="w-11/12 md:w-112 mx-auto rounded-lg p-3">
         {accData.map((item) => {
           return (
             <AccordianItem
@@ -28,4 +26,4 @@ function Accordian() {
   );
 }
 
-export default Accordian;
+export default Homeaccordian;
