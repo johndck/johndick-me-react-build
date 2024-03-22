@@ -11,21 +11,17 @@ function AccordianItem({ id, title, children, curOpen, onOpen }) {
   }
 
   return (
-    <div className="">
+    <div className="accordianItem">
       <div
-        className={`grid grid-cols-auto-1fr-auto shadow-xl cursor-pointer mb-5 border p-4  rounded-xl  ${
-          isOpen ? "accordianOpen" : ""
-        }`}
+        className={`accordTitle ${isOpen ? "accordianOpen" : ""}`}
         onClick={handleOpen}
       >
-        <p className="mr-4">{id < 9 ? `0${id}` : `${id}`}</p>
-        <div>
-          <p>{title}</p>
-          {isOpen && <div className="mt-2 w-5/6">{children}</div>}
-        </div>
-
-        <p className="mr-4">{isOpen ? "-" : "+"}</p>
+        <p className="accordianNumber">{id < 9 ? `0${id}` : `${id}`}</p>
+        <p>{title}</p>
+        <p className="accordianController">{isOpen ? "-" : "+"}</p>
       </div>
+
+      {isOpen && <div className="accordianAnswer">{children}</div>}
     </div>
   );
 }

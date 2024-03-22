@@ -1,10 +1,10 @@
 function InfluenceCards({ influence }) {
   return (
-    <div className=" bg-stone-50 rounded-lg p-3 flex flex-col space-y-4 shadow-lg">
-      <div className="">
-        <h3 className="font-bold">{influence.influence}</h3>
+    <div className="influencesCard">
+      <div className="influencerTitle">
+        <h3>{influence.influence}</h3>
       </div>
-      <div className="">
+      <div className="influencerDescription">
         <p>{influence.explanation}</p>
       </div>
       <div>
