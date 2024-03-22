@@ -1,7 +1,3 @@
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
-
 @font-face {
   font-family: "Open Sans";
   src: url("./fonts/OpenSans-Regular.woff2") format("woff2"),
@@ -42,7 +38,766 @@
   font-family: "Open Sans";
   src: url("./fonts/OpenSans-ExtraBold.woff2") format("woff2"),
     url("./fonts/OpenSans-ExtraBold.woff") format("woff");
-  font-weight: 800;
+  font-weight: bold;
   font-style: normal;
   font-display: swap;
+}
+
+:root {
+  --background-color: rgba(238, 239, 233, 1);
+  --siteRed: rgba(236, 158, 42, 1);
+  --siteRedHighlight: rgba(236, 158, 42, 0.2);
+  --greybackground: rgba(225, 227, 220, 1);
+  --siteRedAccent: rgba(243, 78, 10, 1);
+  --siteturquoise: rgba(0, 161, 188, 1);
+  --navbarBackground: rgba(225, 227, 220, 1);
+  --navBarBorder: rgba(202, 203, 194, 1);
+  --sitePurple: rgba(181, 34, 206, 1);
+  --showcasecard: rgba(64, 64, 67, 1);
+  --kpiBlue: rgba(46, 113, 254, 1);
+  --kpiCardBlue: rgba(2, 92, 225, 1);
+  --kpiText: rgba(235, 237, 230, 1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  font-weight: 400;
+  text-decoration: none;
+  color: black;
+}
+
+.active {
+  color: var(--siteRedAccent);
+  background-color: var(--siteRedHighlight);
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  background-color: var(--background-color);
+  /* display: flex;
+  place-items: center;*/
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h3 {
+  margin-bottom: 15px;
+}
+
+/* here is the site container for every section */
+
+/* for wider screens I want the container to only be 1200 wide */
+
+.container {
+  width: 1200px;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+/* here is the navbar styling */
+
+.navbar {
+  padding: 0.5em 0;
+  position: sticky;
+  background-color: var(--navbarBackground);
+  top: 0;
+  border-bottom: 1px solid var(--navBarBorder);
+}
+
+.navbarContent {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbarElements {
+  padding-top: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  list-style-type: none;
+}
+
+.navbarElements li {
+  margin-right: 1em;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.logo {
+  border-radius: 50%;
+  height: 100px;
+  width: auto;
+  margin: 0;
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.2);
+}
+
+.hamburger {
+  display: none;
+  font-size: 40px;
+}
+
+.hamburger button {
+  font-size: 1.2em;
+  background-color: var(--navbarBackground);
+  color: black;
+  border: none;
+  cursor: pointer;
+  margin: 0;
+}
+
+.nav-links {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 200px;
+  transition: transform 0.3s ease;
+  background-color: white;
+  color: #fff;
+  transform: translateX(100%);
+  background-color: var(--background-color);
+  border-left: var(--siteRed) 3px solid;
+}
+.nav-links.open {
+  transform: translateX(0);
+}
+
+.nav-links ul {
+  list-style: none;
+  font-size: 1.2em;
+}
+
+ul li {
+  margin-bottom: 30px;
+  margin-left: 10px;
+}
+
+.closebtn {
+  align-self: flex-end;
+  color: black;
+  font-size: 2em;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+/* Top section styling */
+
+.topSection {
+  margin-top: 30px;
+}
+
+/* here is the hero section styling */
+
+.hero h1 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 4em;
+  font-weight: 400; /* Regular weight */
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.hero h2 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 7em;
+  font-weight: 400; /* Light weight */
+  margin: 0;
+  margin-bottom: 60px;
+  line-height: 1;
+}
+
+.redq {
+  color: red;
+}
+
+.hero p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.7em;
+  font-weight: 300; /* Regular weight */
+
+  max-width: 50%;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.hero h4 {
+  font-weight: 600;
+  font-size: 2em;
+  margin: 0;
+}
+
+.orangehighlight {
+  background-color: var(--siteRedHighlight);
+}
+
+.problemText {
+  color: var(--siteRedAccent);
+}
+.solutionText {
+  color: var(--siteturquoise);
+}
+
+/* end of hero section */
+
+/* Homepage - showcase section */
+
+.showcaseSection {
+  background-color: black;
+  padding-top: 30px;
+  padding-bottom: 80px;
+}
+
+.showcaseTitle {
+  margin: 0 auto;
+}
+
+.showcaseTitle h2 {
+  margin: 0;
+  line-height: 1;
+}
+
+.showcase {
+  color: white;
+}
+.showcaseTitle {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.showcaseTitle h2 {
+  font-size: 2em;
+  font-weight: 400;
+  margin: 0;
+}
+
+.showcaseLogocontainer {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  grid-auto-flow: row;
+}
+
+.showcaseLogoCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px;
+  background-color: var(--showcasecard);
+  border-radius: 15px;
+}
+
+.showcaseIcon {
+  height: auto;
+  width: 100%;
+}
+
+.showcaseTitleOrange {
+  color: var(--siteRed);
+}
+
+.showcaseLink {
+  color: var(--siteRed);
+  font-size: 2em;
+  font-weight: 400;
+}
+
+/* end of showcase section */
+
+/* Delivery evidence card styling */
+
+.evidenceCardHolder {
+  margin: 0 auto;
+  background-color: var(--greybackground);
+  padding: 30px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.evidenceGridHolder {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+/* styling for each evidence card */
+
+.evidenceCard {
+  padding: 20px;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.evidenceCard h2,
+.evidenceCard h3 {
+  margin: 0;
+  font-weight: 600;
+}
+
+.evidenceChallenge {
+  color: var(--siteRed);
+}
+
+.evidenceActions {
+  color: var(--siteRedAccent);
+}
+
+.evidenceResults {
+  color: var(--siteturquoise);
+}
+
+.evidenceCard hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  height: 1px;
+  background: var(--navBarBorder);
+}
+
+.evidenceCard h3 {
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.evidenceTop {
+  display: flex;
+  align-items: center;
+}
+
+.evidenceLogo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: auto;
+  height: 14px;
+  margin-right: 10px;
+}
+
+.evidenceUL li {
+  margin-bottom: 5px;
+}
+
+.aboutMeContentContainer {
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 95%;
+  border: 1px solid var(--navBarBorder);
+  display: flex;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: var(--navbarBackground);
+}
+
+.aboutMeTextContent {
+  width: 50%;
+}
+
+.aboutMeTextContent p {
+  font-size: 1.2em;
+}
+
+.aboutMeImageContent {
+  width: 50%;
+}
+
+.aboutMeImage {
+  border-radius: 50%;
+  height: auto;
+  max-width: 100%;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.aboutMeAreas {
+  color: var(--sitePurple);
+  font-weight: 600;
+}
+
+.focusArea {
+  font-size: 1.2em;
+}
+
+/* Footer styling */
+.footerContent {
+  max-width: 60%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  gap: 50px;
+}
+
+.footerSocialLinks {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  width: 60%;
+}
+
+.footerEmail {
+  margin-top: 1rem;
+  margin: 0 auto;
+}
+
+.footerBackground {
+  margin-top: 40px;
+  background-color: var(--navbarBackground);
+  border-top: 1px solid var(--navBarBorder);
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+/* Accordian container */
+
+.accordianContentHolder {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.accordianItem {
+  margin: 0;
+  padding: 0;
+  border: 1px solid var(--navBarBorder);
+  margin-bottom: 20px;
+  width: 50%;
+  font-size: 1.2em;
+}
+
+.accordianItem h3 {
+  padding: 0;
+  margin: 0;
+}
+
+.accordTitle {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  margin-bottom: 10px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.accordianNumber {
+  font-weight: 600;
+  margin-right: 20px;
+}
+
+.accordianController {
+  cursor: pointer;
+  margin-right: 10px;
+  font-weight: 600;
+}
+
+.accordianAnswer {
+  padding: 5px;
+  margin-left: 40px;
+  max-width: 85%;
+  display: block;
+}
+
+.accordianOpen {
+  border-top: 1px solid var(--navBarBorder);
+  font-weight: 700;
+}
+
+/* Styling the KPI/current focus section */
+
+.lineBreak {
+  height: 1px;
+  max-width: 100%;
+  background-color: var(--navBarBorder);
+}
+
+.kpiContainer {
+  padding-top: 40px;
+}
+
+.kpiGridContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 50px;
+  margin-top: 40px;
+  background-color: var(--kpiBlue);
+  border-radius: 10px;
+}
+
+.kpiCard {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.kpiStats {
+  max-width: 65%;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: var(--kpiCardBlue);
+  color: var(--kpiText);
+}
+
+.kpiStats h3 {
+  margin: 0;
+}
+
+.kpiNo {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 50%;
+  border: 2px solid var(--kpiText);
+  width: 15px;
+  height: 15px;
+  margin-bottom: 10px;
+}
+
+.line {
+  width: 90%;
+  height: 1px;
+  background-color: var(--kpiText);
+  margin-bottom: 10px;
+}
+
+.kpiTitle {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+/* Influences section */
+
+.influenceGridHolder {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-top: 40px;
+  padding: 10px;
+}
+
+.influenceCardHolder {
+  max-width: 100%;
+}
+
+.influencesCard {
+  overflow: hidden;
+  padding: 15px;
+  border-radius: 15px;
+  background-color: var(--navbarBackground);
+  border: 1px solid var(--navBarBorder);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.influencesCard h3 {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.influencerDescription {
+  margin-bottom: 20px;
+}
+
+.influencerTitle {
+  margin-bottom: 15px;
+}
+
+.influencerArrow {
+  color: var(--sitePurple);
+}
+
+.influencerLinkWrap {
+  overflow-wrap: break-word;
+}
+
+/** MEDIA QUERIES **/
+/*******************
+
+
+/* styling to make the navbar hamburger on ipad & mobile */
+
+@media (max-width: 1200px) {
+  .influenceGridHolder {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 900px) {
+  .influenceGridHolder {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 95%;
+  }
+  .navbarElements {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger button {
+    font-size: 1.2em;
+    background-color: var(--navbarBackground);
+    color: black;
+    border: none;
+    cursor: pointer;
+    margin: 1.2rem;
+  }
+
+  .hero h1 {
+    font-size: 3em;
+    margin-bottom: 30px;
+  }
+
+  .hero h2 {
+    margin: 0;
+    margin-bottom: 40px;
+  }
+
+  .hero p {
+    max-width: 75%;
+  }
+
+  .showcaseLogocontainer {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  .aboutMeContentContainer {
+    flex-direction: column;
+  }
+
+  .aboutMeTextContent {
+    width: 100%;
+  }
+
+  .aboutMeImageContent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .aboutMeImage {
+    max-width: 90%;
+  }
+
+  .evidenceCardHolder {
+    padding: 10px;
+  }
+
+  .footerContent {
+    max-width: 90%;
+  }
+
+  .footerSocialLinks {
+    width: 90%;
+  }
+
+  .accordianItem {
+    width: 80%;
+  }
+
+  .kpiGridContent {
+    grid-template-columns: 1fr;
+    padding: 40px;
+  }
+
+  .kpiStats {
+    max-width: 85%;
+  }
+
+  .evidenceGridHolder {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+
+  .hero h2 {
+    font-size: 4em;
+    margin: 0;
+    margin-bottom: 40px;
+  }
+
+  .hero p {
+    max-width: 95%;
+  }
+
+  .showcaseLogocontainer {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .accordianItem {
+    width: 90%;
+  }
+
+  .kpiGridContent {
+    padding: 20px;
+  }
+
+  .kpiStats {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 470px) {
+  .influencesCard {
+    width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  .hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+
+  .hero h2 {
+    font-size: 3.2em;
+    margin: 0;
+    margin-bottom: 40px;
+  }
+
+  .kpiStats {
+    max-width: 95%;
+  }
 }

@@ -1,24 +1,26 @@
-// add in the section components to this page
-// create the components
-// export the components
-// import the components into this file
-
-import Contactdetails from "../components/contact";
+import { Link } from "react-router-dom";
 
 function Contact() {
   return (
-    <>
-      <main>
-        <section>
-          <div className="container sm:mx-auto sm:max-w-4/5 md:mx-auto md:max-w-4/5 lg:mx-auto lg:max-w-4/5 xl:mx-auto xl:w-9/10 xl:max-w-1280">
-            <div className="p-3">
-              <h3 className="text-h3 font-opensans">Get in touch</h3>
-              <Contactdetails />
-            </div>
-          </div>
-        </section>
-      </main>
-    </>
+    <div>
+      <p>johndick.me personal site</p>
+      <p>Contact details</p>
+      <Link style={{ paddingRight: "10px" }} to="/">
+        Home
+      </Link>
+      <Link style={{ paddingRight: "10px" }} to="/Evidence">
+        Evidence
+      </Link>
+      <Link style={{ paddingRight: "10px" }} to="/Focus">
+        Focus
+      </Link>
+      <Link style={{ paddingRight: "10px" }} to="/Shaped">
+        Shaped
+      </Link>
+      <Link style={{ paddingRight: "10px" }} to="/Contact">
+        Contact
+      </Link>
+    </div>
   );
 }
 
